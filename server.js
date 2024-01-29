@@ -14,6 +14,14 @@ for (const key in answers) app.get(`/task/${key}`, (req, res) => {
         answer: answers[key]
     };
     
+    res.render('answer', data);
+});
+
+app.get('/task/', (req, res) => {
+    const data = {
+        listAnswers: answers
+    };
+
     res.render('index', data);
 });
 

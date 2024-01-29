@@ -5,11 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
-  <title><%= answerName %></title>
+  <link rel="stylesheet" href="/index.css">
+  <title>Lista de respostas</title>
 </head>
 <body>
-    <h1><%= answerName %>:</h1>
-    <h2><%= answer %></h2>
+    <h1>Lista de respostas</h1>
+    <ul>
+        <% for(let i in listAnswers) { %>
+            <li>
+                <h2><%= i %> - </h2>
+                <a href="/task/<%= i %>"><%= listAnswers[i] %></a>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>
