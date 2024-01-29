@@ -4,10 +4,16 @@ const app = express();
 const port = 3000;
 const answers = require('./answers').default;
 
-app.use(express.static(path.join(__dirname, '')));
+app.set('view engine', 'ejs');
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 for (const key in answers) app.get(`/task/${key}`, (req, res) => {
-    res.send(`<h1>${answers[key]}</h1>`);
+    const data = {
+        answer: answers[key]
+    };
+    
+    res.render('index', data);
 });
 
 app.listen(port, () => {
