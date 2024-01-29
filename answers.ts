@@ -7,16 +7,16 @@ const answerE: number | undefined = lista.find(item => item == 152);
 const answerF: number[] = lista.filter(item => item % 2 == 0);
 
 lista.push(12);
-const answerG: number[] = lista;
+const answerG: number[] = [...lista];
 
 lista.unshift(25);
-const answerH: number[] = lista;
+const answerH: number[] = [...lista];
 
 lista.splice(lista.length - 1, 1);
-const answerI: number[] = lista;
+const answerI: number[] = [...lista];
 
 lista.splice(0, 1);
-const answerJ: number[] = lista;
+const answerJ: number[] = [...lista];
 
 const answersList = {
     answerA,

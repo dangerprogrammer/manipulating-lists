@@ -8,13 +8,13 @@ const answerD = lista.filter(item => item != 53 && item != 80);
 const answerE = lista.find(item => item == 152);
 const answerF = lista.filter(item => item % 2 == 0);
 lista.push(12);
-const answerG = lista;
+const answerG = [...lista];
 lista.unshift(25);
-const answerH = lista;
+const answerH = [...lista];
 lista.splice(lista.length - 1, 1);
-const answerI = lista;
+const answerI = [...lista];
 lista.splice(0, 1);
-const answerJ = lista;
+const answerJ = [...lista];
 const answersList = {
     answerA,
     answerB,

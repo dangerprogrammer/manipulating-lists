@@ -7,8 +7,7 @@ const answers = require('./answers').default;
 app.use(express.static(path.join(__dirname, '')));
 
 for (const key in answers) app.get(`/task/${key}`, (req, res) => {
-    console.log(answers[key]);
-    res.send(`${answers[key]}`);
+    res.send(`<h1>${answers[key]}</h1>`);
 });
 
 app.listen(port, () => {
