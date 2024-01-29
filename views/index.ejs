@@ -13,8 +13,7 @@
     <ul>
         <% for(let i in listAnswers) { %>
             <li>
-                <h2><%= i %> - </h2>
-                <a href="/task/<%= i %>"><%= listAnswers[i] %></a>
+                <a href="/task/<%= i %>"><h2><%= i %></h2></a>
             </li>
         <% } %>
     </ul>
