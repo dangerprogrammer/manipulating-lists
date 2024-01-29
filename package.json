@@ -1,0 +1,14 @@
+{
+  "name": "manipulating-lists",
+  "version": "1.0.0",
+  "description": "Manipulando listas com TypeScript e NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node manipulating-lists"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}
