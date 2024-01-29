@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 for (const key in answers) app.get(`/task/${key}`, (req, res) => {
     const data = {
+        answerName: key,
         answer: answers[key]
     };
     
