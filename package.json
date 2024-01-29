@@ -4,11 +4,15 @@
   "description": "Manipulando listas com TypeScript e NodeJS",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node manipulating-lists"
+    "start": "tsc && nodemon server"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.18.2",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
